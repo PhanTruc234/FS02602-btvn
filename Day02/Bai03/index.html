@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Luxurious+Script&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 24px;
+        }
+
+        .frame {
+            width: 1600px;
+            height: 1200px;
+            background-color: #D8DAE2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .product {
+            width: 1563px;
+            /* height: 777px; */
+            background-color: #EFF0F1;
+            border-radius: 26px;
+            box-shadow: 0 76px 27px 0 #061B521A;
+            padding: 62px;
+            z-index: 10;
+        }
+
+        .frame::after {
+            content: "";
+            position: absolute;
+            width: 310px;
+            height: 294px;
+            background-color: #E5E7F0;
+            border-radius: 100%;
+            top: 5%;
+            right: 21%;
+        }
+
+        .frame::before {
+            content: "";
+            position: absolute;
+            width: 433px;
+            height: 410px;
+            background-color: #E5E7F0;
+            border-radius: 100%;
+            top: 61.5%;
+            left: 15%;
+        }
+
+        .product-title {
+            font-family: "Merriweather", serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #0E0E38;
+        }
+
+        .product-info {
+            display: flex;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .product-info>p {
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #ffff;
+            font-weight: 500;
+        }
+
+        .product-group {
+            margin-top: 56px;
+            display: flex;
+            gap: 64px;
+            align-items: center;
+
+        }
+
+        .product-group>div {
+            padding: 24px;
+            /* width: 437px; */
+            background-color: #ffff;
+            border-radius: 32px;
+        }
+
+        .product-img {
+            width: 389px;
+            height: 268px;
+        }
+
+        .product-imgs-group {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .product-imgs-group>div {
+            width: 119px;
+            height: 97px;
+        }
+
+        .product-review {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+        }
+
+        .product-review-text {
+            font-size: 24px;
+            font-weight: 500;
+            color: #0E0E38;
+        }
+
+        .product-review-icon {
+            font-weight: 500;
+            color: #0E0E38;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .fa-regular {
+            font-size: 24px;
+            color: #2C3E50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="product">
+            <h2 class="product-title">Popular Collections</h2>
+            <div class="product-info">
+                <p>Profile</p>
+                <p>New York</p>
+                <p>Relaxing</p>
+                <p>Person</p>
+                <p>Fashion</p>
+            </div>
+            <div class="product-group">
+                <div>
+                    <div class="product-img">
+                        <img src="./imgs/girl.png" alt="girl">
+                    </div>
+                    <div class="product-imgs-group">
+                        <div>
+                            <img src="./imgs/girl_1.png" alt="girl_1">
+                        </div>
+                        <div>
+                            <img src="./imgs/girl_2.png" alt="girl_2">
+                        </div>
+                        <div>
+                            <img src="./imgs/girl_3.png" alt="girl_3">
+                        </div>
+                    </div>
+                    <div class="product-review">
+                        <p class="product-review-text">People</p>
+                        <p class="product-review-icon">
+                            <i class="fa-regular fa-image"></i>
+                            144
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-img">
+                        <img src="./imgs/desert.png" alt="desert">
+                    </div>
+                    <div class="product-imgs-group">
+                        <div>
+                            <img src="./imgs/desert_1.png" alt="desert_1">
+                        </div>
+                        <div>
+                            <img src="./imgs/desert_2.png" alt="desert_2">
+                        </div>
+                        <div>
+                            <img src="./imgs/desert_3.png" alt="desert_3">
+                        </div>
+                    </div>
+                    <div class="product-review">
+                        <p class="product-review-text">Nature</p>
+                        <p class="product-review-icon">
+                            <i class="fa-regular fa-image"></i>
+                            7k
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-img">
+                        <img src="./imgs/building.png" alt="building">
+                    </div>
+                    <div class="product-imgs-group">
+                        <div>
+                            <img src="./imgs/building_1.png" alt="building_1">
+                        </div>
+                        <div>
+                            <img src="./imgs/building_2.png" alt="building_2">
+                        </div>
+                        <div>
+                            <img src="./imgs/building_3.png" alt="building_3">
+                        </div>
+                    </div>
+                    <div class="product-review">
+                        <p class="product-review-text">History</p>
+                        <p class="product-review-icon">
+                            <i class="fa-regular fa-image"></i>
+                            431
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

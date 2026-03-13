@@ -98,7 +98,8 @@
 
         .product-group {
             margin-top: 56px;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 64px;
             align-items: center;
             flex-wrap: wrap;
@@ -120,7 +121,7 @@
         .product-imgs-group {
             display: flex;
             align-items: center;
-            gap: 16px;
+            justify-content: space-between;
             margin-top: 16px;
         }
 

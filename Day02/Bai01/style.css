@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #191847;
+    background-color: #EEF2F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product {
+    width: 887px;
+    border-radius: 15px;
+    box-shadow: 0 24px 28px 9px #B3C1D954;
+    background-color: #FFFFFF;
+    gap: 32px;
+    padding: 82px;
+
+    .product-imgs {
+        width: 249px;
+        height: 223px;
+    }
+
+    .product-content {
+        flex: auto;
+        /* margin-top: 18px; */
+
+        .content-free {
+            background-color: #191847;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            display: inline-block;
+
+            font-weight: 600;
+        }
+
+        .content-title {
+            font-weight: 600;
+        }
+
+        .price-group {
+            .old-price {
+                text-decoration: line-through;
+            }
+
+            .price {
+                font-size: 48px;
+                font-weight: 700;
+            }
+
+            .price-des {
+                opacity: 0.6;
+            }
+        }
+
+        .btn-primary {
+            background-color: #4788E9;
+            color: #fff;
+            box-shadow: 0 7px 0 0 #1C57EE;
+
+            font-weight: 500;
+        }
+
+        .point {
+            width: 13px;
+            height: 13px;
+            background-color: #00D98B;
+            border-radius: 100%;
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+        .btn-group {
+            gap: 16px;
+
+            .btn-secondary {
+                border: 2px solid #C9C9DA;
+                background-color: #fff;
+                gap: 10px;
+                justify-content: center;
+                color: #191847;
+            }
+
+            i {
+                font-size: 21px;
+            }
+        }
+    }
+}

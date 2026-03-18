@@ -16,71 +16,71 @@
 </head>
 
 <body>
-    <main>
-        <section>
+    <div class="collection">
+        <header>
             <h2>Popular Collections</h2>
-            <nav class="product-filter flex-center">
+            <nav class="flex-center">
                 <button class="btn">Profile</button>
                 <button class="btn">New York</button>
                 <button class="btn">Relaxing</button>
                 <button class="btn">Person</button>
                 <button class="btn">Fashion</button>
             </nav>
-            <div class="product-group flex-center">
-                <article>
-                    <figure class="product-img">
-                        <img src="./imgs/girl.png" alt="girl">
-                    </figure>
-                    <div class="product-imgs-group flex-center">
-                        <img src="./imgs/girl_1.png" alt="girl_1">
-                        <img src="./imgs/girl_2.png" alt="girl_2">
-                        <img src="./imgs/girl_3.png" alt="girl_3">
-                    </div>
-                    <div class="product-review flex-between">
-                        <p class="product-review-text">People</p>
-                        <p class="product-review-icon flex-center">
-                            <i class="fa-regular fa-image"></i>
-                            144
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <figure class="product-img">
-                        <img src="./imgs/desert.png" alt="desert">
-                    </figure>
-                    <div class="product-imgs-group flex-center">
-                        <img src="./imgs/desert_1.png" alt="desert_1">
-                        <img src="./imgs/desert_2.png" alt="desert_2">
-                        <img src="./imgs/desert_3.png" alt="desert_3">
-                    </div>
-                    <div class="product-review flex-between">
-                        <p class="product-review-text">Nature</p>
-                        <p class="product-review-icon flex-center">
-                            <i class="fa-regular fa-image"></i>
-                            7k
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <figure class="product-img">
-                        <img src="./imgs/building.png" alt="building">
-                    </figure>
-                    <div class="product-imgs-group flex-center">
-                        <img src="./imgs/building_1.png" alt="building_1">
-                        <img src="./imgs/building_2.png" alt="building_2">
-                        <img src="./imgs/building_3.png" alt="building_3">
-                    </div>
-                    <div class="product-review flex-between">
-                        <p class="product-review-text">History</p>
-                        <p class="product-review-icon flex-center">
-                            <i class="fa-regular fa-image"></i>
-                            431
-                        </p>
-                    </div>
-                </article>
+        </header>
+        <main class="collection-list flex-between">
+            <div class="collection-card">
+                <div class="collection-thumbnail">
+                    <img src="./imgs/girl.png" alt="girl">
+                </div>
+                <div class="sub-thumbnail flex-between">
+                    <img src="./imgs/girl_1.png" alt="girl_1">
+                    <img src="./imgs/girl_2.png" alt="girl_2">
+                    <img src="./imgs/girl_3.png" alt="girl_3">
+                </div>
+                <div class="collection-des flex-between">
+                    <p class="collection-text">People</p>
+                    <p class="quantity flex-center">
+                        <i class="fa-regular fa-image"></i>
+                        <span>144</span>
+                    </p>
+                </div>
             </div>
-        </section>
-    </main>
+            <div class="collection-card">
+                <div class="collection-thumbnail">
+                    <img src="./imgs/desert.png" alt="girl">
+                </div>
+                <div class="sub-thumbnail flex-between">
+                    <img src="./imgs/desert_1.png" alt="girl_1">
+                    <img src="./imgs/desert_2.png" alt="girl_2">
+                    <img src="./imgs/desert_3.png" alt="girl_3">
+                </div>
+                <div class="collection-des flex-between">
+                    <p class="collection-text">People</p>
+                    <p class="quantity flex-center">
+                        <i class="fa-regular fa-image"></i>
+                        <span>7k</span>
+                    </p>
+                </div>
+            </div>
+            <div class="collection-card">
+                <div class="collection-thumbnail">
+                    <img src="./imgs/building.png" alt="girl">
+                </div>
+                <div class="sub-thumbnail flex-between">
+                    <img src="./imgs/building_1.png" alt="girl_1">
+                    <img src="./imgs/building_2.png" alt="girl_2">
+                    <img src="./imgs/building_3.png" alt="girl_3">
+                </div>
+                <div class="collection-des flex-between">
+                    <p class="collection-text">People</p>
+                    <p class="quantity flex-center">
+                        <i class="fa-regular fa-image"></i>
+                        <span>431</span>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>

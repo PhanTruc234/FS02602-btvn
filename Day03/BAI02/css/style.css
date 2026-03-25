@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Luxurious+Script&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Luxurious+Script&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* SETTING : BEGIN  */
+:root {
+    --color-primary: #1E2246;
+    --color-secondary: #C2C5E2;
+
+    --color-design-left: #BBCBFB;
+    --color-design-right: #F1D4FF;
+
+    --color-engineering-left: #FBBBDA;
+    --color-engineering-right: #FFD4D4;
+
+    --color-operations-left: #BBEBFB;
+    --color-operations-right: #EFD4FF;
+
+    --color-people-left: #BBFBE4;
+    --color-people-right: #D4E0FF;
+
+    --color-sales-left: #BBD8FB;
+    --color-sales-right: #FFD4D4;
+
+    --color-university-left: #FFDEC7;
+    --color-university-right: #D4D9FF;
+
+    --font-merriweather: "Merriweather", serif;
+    --font-poppins: "Poppins", sans-serif;
+}
+
+html {
+    font-family: var(--font-poppins);
+    color: var(--color-primary);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #E6EAF8;
+}
+
+/* SETTING : END */
+/* HEADER : BEGIN  */
+section {
+    max-width: 1054px;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.header {
+    .title {
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: var(--font-merriweather);
+        text-align: center;
+    }
+}
+
+/* HEADER : END */
+/* MAIN : BEGIN  */
+.card-list {
+    margin-top: 4.5rem;
+    gap: 2rem;
+    align-items: stretch;
+
+    .card {
+        flex: 1 1 calc((100% - 4rem) / 3);
+        background-color: #fff;
+        padding: 3rem 2.5rem;
+        border-radius: 8px;
+        cursor: pointer;
+
+        .card-option {
+            gap: 1rem;
+
+            .card-icon {
+                width: 64px;
+                height: 64px;
+                border-radius: 14px;
+
+                i {
+                    font-size: 1.7rem;
+                }
+
+                &.card-design {
+                    background: linear-gradient(to right, var(--color-design-left), var(--color-design-right));
+                    ;
+                }
+
+                &.card-engineering {
+                    background: linear-gradient(to right, var(--color-engineering-left), var(--color-engineering-right));
+                }
+
+                &.card-operations {
+                    background: linear-gradient(to right, var(--color-operations-left), var(--color-operations-right));
+                }
+
+                &.card-people {
+                    background: linear-gradient(to right, var(--color-people-left), var(--color-people-right));
+                }
+
+                &.card-sales {
+                    background: linear-gradient(to right, var(--color-sales-left), var(--color-sales-right));
+                }
+
+                &.card-university {
+                    background: linear-gradient(to right, var(--color-university-left), var(--color-university-right));
+                }
+            }
+
+            .card-title {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+
+        &:nth-child(2)>.card-btn {
+            background-color: var(--color-primary);
+            color: #fff;
+        }
+
+        .card-btn {
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin-top: 2rem;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            background-color: transparent;
+            border: 1px solid var(--color-secondary);
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background-color: var(--color-primary);
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+/* MAIN : END */

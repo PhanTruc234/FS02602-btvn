@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Luxurious+Script&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* SETTING : BEGIN */
+:root {
+    --color-primary: #0F0F34;
+    --color-secondary: #F8F9FF;
+
+    --font-mulish: "Mulish", sans-serif;
+}
+
+html {
+    font-family: var(--font-mulish);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+body {
+    background-color: #DDE1F9;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: var(--color-primary);
+}
+
+/* SETTING : END */
+/* HEADER : BEGIN */
+.header {
+    max-width: 1255px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+
+    & .nav {
+        background-color: var(--color-secondary);
+        padding: 45px 40px;
+        border-radius: 25px;
+
+        & .nav-items>li>a {
+            padding: 20px 25px;
+        }
+
+        & .nav-items {
+            & .blox {
+                position: relative;
+
+                &:hover>.drop-down {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+
+                & .drop-down {
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    text-transform: capitalize;
+                    width: 389px;
+                    font-size: 14px;
+                    background-color: #fff;
+                    box-shadow: 0px 25px 45px -15px #2D2D8C1A;
+                    border-radius: 15px;
+                    padding: 30px;
+                    /* top: 100%;
+                    margin-top: 10px; */
+                    top: 0%;
+                    margin-top: 50px;
+                    z-index: 10;
+                    opacity: 0;
+                    transition: all 0.5s ease-in-out;
+                    pointer-events: none;
+
+                    /* &::after {
+                        content: "";
+                        width: 150px;
+                        height: 20px;
+                        background-color: transparent;
+                        position: absolute;
+                        top: -5%;
+                        left: 0%;
+                    } */
+
+                    &>ul>li>a {
+                        padding: 12px 29px 12px 15px;
+                    }
+
+                    &>ul>li:hover {
+                        background-color: var(--color-secondary);
+                        border-radius: 5px;
+                    }
+
+                    &>ul>li:first-child {
+                        padding: 12px 0px 12px 15px;
+                        font-size: 12px;
+                        font-weight: 900;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        & .nav-items>li:hover>a {
+            border: 1px solid #DDE1F9;
+            background-color: #EFF1FF;
+            border-radius: 15px;
+        }
+
+        & .nav-items>li:nth-child(3)>a {
+            border: 1px solid #DDE1F9;
+            background-color: #EFF1FF;
+            border-radius: 15px;
+        }
+
+        & .nav-log>li>a {
+            padding: 18px 25px 17px 30px;
+            border-radius: 5px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        & .nav-log>li:hover>a {
+            background-color: var(--color-primary);
+            color: #fff;
+        }
+
+        & .nav-log>li:last-child>a {
+            background-color: var(--color-primary);
+            color: #fff;
+        }
+    }
+
+}
+
+/* HEADER : END */

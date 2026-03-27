@@ -16,6 +16,25 @@ html {
 
 body {
     background-color: #DDE1F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -20%;
+        left: 30%;
+        width: 1000px;
+        height: 1000px;
+
+        background: radial-gradient(circle, #7dd3fc, transparent 70%);
+        filter: blur(100px);
+        opacity: 0.8;
+        z-index: 2;
+    }
 }
 
 .flex {
@@ -39,11 +58,13 @@ a {
 .header {
     max-width: 1255px;
     width: 100%;
-    margin: 20px auto 0;
+    /* margin: 200px auto 0; */
     background-color: #fff;
     padding: 15px;
     border-radius: 25px;
     text-transform: uppercase;
+    z-index: 99;
+    position: relative;
 
     & .nav {
         background-color: var(--color-secondary);

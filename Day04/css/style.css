@@ -55,7 +55,7 @@ a {
         }
 
         & .nav-items {
-            & .blox {
+            & .mega-menu {
                 position: relative;
 
                 &:hover>.drop-down {
@@ -93,16 +93,16 @@ a {
                         left: 0%;
                     } */
 
-                    &>ul>li>a {
+                    & .column-menu>ul>li>a {
                         padding: 12px 29px 12px 15px;
                     }
 
-                    &>ul>li:hover {
+                    & .column-menu>ul>li:hover {
                         background-color: var(--color-secondary);
                         border-radius: 5px;
                     }
 
-                    &>ul>li:first-child {
+                    & .column-menu .column-title {
                         padding: 12px 0px 12px 15px;
                         font-size: 12px;
                         font-weight: 900;

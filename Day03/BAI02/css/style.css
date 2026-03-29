@@ -82,6 +82,7 @@ section {
 
     .card {
         flex: 1 1 calc((100% - 4rem) / 3);
+        min-width: 330px;
         background-color: #fff;
         padding: 3rem 2.5rem;
         border-radius: 8px;
@@ -131,11 +132,6 @@ section {
             }
         }
 
-        &:nth-child(2)>.card-btn {
-            background-color: var(--color-primary);
-            color: #fff;
-        }
-
         .card-btn {
             font-size: 1.125rem;
             font-weight: 500;
@@ -156,3 +152,12 @@ section {
 }
 
 /* MAIN : END */
+/* FOOTER : BEGIN */
+footer {
+    text-align: center;
+    width: 845px;
+    margin: 0 auto;
+    margin-top: 61px;
+}
+
+/* FOOTER : END */

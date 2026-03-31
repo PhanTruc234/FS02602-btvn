@@ -7,6 +7,15 @@
 a {
     text-decoration: none;
     display: inline-block;
+    color: inherit;
+    font-family: inherit;
+}
+
+button {
+    display: block;
+    border: none;
+    font-family: inherit;
+    font-weight: inherit;
 }
 
 ul,

@@ -37,7 +37,7 @@ body {
         top: -155px;
         left: -215px;
         width: 1544.78px;
-        height: 1169.81px;
+        height: 100vh;
         transform: rotate(0deg);
         z-index: -1;
     }
@@ -101,8 +101,6 @@ header {
                 background-color: var(--color-primary);
                 transform: translateX(-50%) scale(1);
             }
-
-
         }
     }
 
@@ -283,6 +281,7 @@ header {
         gap: 31px;
 
         & li {
+            min-width: 295px;
             background-color: #fff;
             border-radius: 20px;
             overflow: hidden;
@@ -317,10 +316,6 @@ header {
             object-position: 10% center;
         }
     }
-
-
-
-
 }
 
 /* SECTION-3 : END */

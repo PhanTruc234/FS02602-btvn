@@ -102,6 +102,11 @@ header {
                 transform: translateX(-50%) scale(1);
             }
         }
+
+        & .menu .menu-item a.active::after {
+            background-color: var(--color-primary);
+            transform: translateX(-50%) scale(1);
+        }
     }
 
     & .btn-sign-in {
@@ -109,6 +114,12 @@ header {
         min-width: 110px;
         min-height: 45px;
         justify-content: center;
+        transition: all 0.6s ease-in-out;
+
+        &:hover {
+            background-color: var(--color-primary);
+            color: #fff;
+        }
     }
 }
 
@@ -152,8 +163,8 @@ header {
     }
 
     & .hero-img {
-        min-width: 500px;
-        height: 500px;
+        max-width: 500px;
+        /* height: 500px; */
         position: relative;
 
         & .woman {

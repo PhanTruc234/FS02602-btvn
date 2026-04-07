@@ -1,0 +1,110 @@
+.img-1 img {
+    width: 100%;
+}
+
+.img-league {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 32px 0 62.2px;
+    flex-wrap: wrap;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+
+    & li {
+        background-color: #0E4C67;
+    }
+
+    & li img {
+        width: 100%;
+    }
+
+    & li h2 {
+        padding: 27px 0 28px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+.video-warpper {
+    margin-top: 64px;
+
+    iframe {
+        height: 792px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E4C67;
+    padding: 39px 0;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+    & input {
+        width: 280px;
+        padding: 15px 0px 17px 20px;
+        border: none;
+        border: 1px solid #FFA800;
+        background-color: transparent;
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    & .btn {
+        padding: 15px 15px 17px;
+        background-color: #FFA800;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .card-list {
+        grid-template-columns: repeat(3, 1fr);
+
+        & li h2 {
+
+            font-size: 16px;
+        }
+    }
+
+    .video-warpper iframe {
+        height: 692px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .card-list {
+        grid-template-columns: repeat(2, 1fr);
+
+        & li h2 {
+
+            font-size: 14px;
+        }
+    }
+
+    .video-warpper iframe {
+        height: 492px;
+    }
+}

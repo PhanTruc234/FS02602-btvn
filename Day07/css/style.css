@@ -1,11 +1,40 @@
+/* @font-face {
+    font-family: "Beaufort";
+    src: url("../fonts/BeaufortforLOL-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: url("../fonts/BeaufortforLOL-Medium.ttf");
+    font-weight: 500;
+} */
+
+@font-face {
+    font-family: "BeaufortforLOL-Bold";
+    src: url("../fonts/BeaufortforLOL-Bold.ttf");
+    font-weight: 700;
+}
+
+body {
+    padding: 0 10px;
+}
+
+html {
+    font-family: "BeaufortforLOL-Bold", sans-serif;
+    font-weight: 700;
+}
+
 .img-1 img {
     width: 100%;
+    max-width: 100%;
 }
 
 .img-league {
     text-align: center;
     margin-top: 32px;
 }
+
 
 .nav {
     display: flex;
@@ -16,23 +45,52 @@
     font-weight: 700;
     margin: 32px 0 62.2px;
     flex-wrap: wrap;
+
+    & li a {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 0;
+            border: 2px solid transparent;
+            border-radius: 0.625rem;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+
+    & li a:hover::after {
+        width: 100%;
+        border-color: #0E4C67;
+    }
 }
 
 .card-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     gap: 32px;
 
-    & li {
+
+    & li a {
         background-color: #0E4C67;
+        cursor: pointer;
+        width: 100%;
+
     }
 
-    & li img {
+    & li a img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     & li h2 {
         padding: 27px 0 28px;
+        font-weight: 700;
         text-align: center;
         color: #fff;
         font-size: 20px;
@@ -43,7 +101,7 @@
     margin-top: 64px;
 
     iframe {
-        height: 792px;
+        height: 592px;
     }
 }
 
@@ -51,17 +109,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 23px;
     background-color: #0E4C67;
-    padding: 39px 0;
+    padding: 39px 10px;
+    margin-top: 73px;
+
+    & p {
+        color: #fff;
+    }
 }
 
 .action {
     display: flex;
     align-items: center;
     gap: 23px;
+    flex-wrap: wrap;
+
+
 
     & input {
-        width: 280px;
+        max-width: 280px;
+        /* width: 100%; */
         padding: 15px 0px 17px 20px;
         border: none;
         border: 1px solid #FFA800;
@@ -76,35 +145,132 @@
         padding: 15px 15px 17px;
         background-color: #FFA800;
         border-radius: 5px;
+        color: #fff;
     }
 }
 
 @media screen and (max-width : 992px) {
+    .img-league img {
+        width: 200px;
+    }
+
     .card-list {
         grid-template-columns: repeat(3, 1fr);
 
         & li h2 {
-
+            padding: 22px 0 24px;
             font-size: 16px;
         }
     }
 
     .video-warpper iframe {
-        height: 692px;
+        height: 400px;
     }
 }
 
 @media screen and (max-width : 600px) {
+    .img-league img {
+        width: 180px;
+    }
+
+    .nav {
+        font-size: 16px;
+        gap: 24;
+    }
+
     .card-list {
         grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
 
         & li h2 {
-
+            padding: 20px 0 22px;
             font-size: 14px;
         }
     }
 
     .video-warpper iframe {
         height: 492px;
+    }
+}
+
+@media screen and (max-width : 468px) {
+    .img-league img {
+        width: 150px;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .card-list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+        & li h2 {
+            padding: 18px 0 20px;
+            font-size: 14px;
+        }
+    }
+
+    .video-warpper iframe {
+        height: 292px;
+    }
+
+    .action {
+        & input {
+            width: 100%;
+
+        }
+    }
+
+}
+
+@media screen and (max-width : 165px) {
+    .img-league img {
+        width: 90px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .card-list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+        & li h2 {
+            padding: 10px 0 11px;
+            font-size: 12px;
+        }
+    }
+
+    .video-warpper iframe {
+        height: 162px;
+    }
+
+    .footer {
+
+        padding: 19px 10px;
+
+        & p {
+            font-size: 12px;
+        }
+
+        & input {
+            padding: 10px 0px 14px 10px;
+
+            &::placeholder {
+                font-size: 12px;
+            }
+
+
+        }
+
+        & .btn {
+            padding: 10px 10px 12px;
+            background-color: #FFA800;
+            border-radius: 5px;
+            font-size: 12px;
+        }
     }
 }

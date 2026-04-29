@@ -1,5 +1,9 @@
-const rax = +window.prompt("Nhập số thuế:");
-const calculRax = (l) => {
+const tax = +window.prompt("Nhập số thuế:");
+const calcultax = (tax) => {
+    if (isNaN(tax) || tax < 0) {
+        console.log("Số điện không hợp lệ");
+        return;
+    }
     const thue = [
         { price: 11000000, rate: 0 },
         { price: 25000000, rate: 0.05 },
@@ -10,14 +14,14 @@ const calculRax = (l) => {
     let total = 0;
     let prev = 0;
     for (let i = 0; i < thue.length; i++) {
-        if (l <= prev) {
+        if (tax <= prev) {
             break
         } else {
-            let tax = Math.min(l, thue[i].price) - prev
-            total += tax * thue[i].rate
+            let number = Math.min(tax, thue[i].price) - prev
+            total += number * thue[i].rate
             prev = thue[i].price
         }
     }
     return total
 }
-console.log(calculRax(rax).toLocaleString())
+console.log(calcultax(tax).toLocaleString())

@@ -1,6 +1,6 @@
 // Input:
 const n = +window.prompt("Nhập số n:");
-const char = window.prompt("Nhập kí tự :")
+const char = window.prompt("Nhập kí tự muốn in:")
 function printChristmasTree(n, character) {
     // Xử lý và in ra kết quả
     for (let i = 1; i <= n; i++) {

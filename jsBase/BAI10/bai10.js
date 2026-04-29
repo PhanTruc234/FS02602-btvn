@@ -1,4 +1,4 @@
-const a = +window.prompt("Nhập số a:");
+const a = +window.prompt("Nhập số điện:");
 const calculateElectricPrices = (electric) => {
     if (isNaN(electric) || electric < 0) {
         console.log("Số điện không hợp lệ");
